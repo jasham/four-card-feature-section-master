@@ -1,0 +1,62 @@
+.main {
+  max-width: 25rem;
+  box-shadow: 0px 10px 20px 0.001px rgba(84, 158, 242, 0.15);
+  border-radius: 0.5rem;
+  padding-top: 0.27rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  position: relative;
+  transition: all;
+}
+
+.main > div {
+  background-color: white;
+  padding: 2rem;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.main > div > h2 {
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.main > div > p {
+  color: var(--GrayishBlue);
+  padding-bottom: 2rem;
+  font-weight: 300;
+}
+.main > div > div {
+  display: flex;
+  justify-content: flex-end;
+}
+.main:hover {
+  animation-name: shaking-box;
+  animation-duration: 0.2s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes shaking-box {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 6px;
+    top: 2px;
+  }
+  50% {
+    left: 0px;
+    top: 5px;
+  }
+  75% {
+    left: -6px;
+    top: 2px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}

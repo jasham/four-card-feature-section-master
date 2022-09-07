@@ -1,9 +1,24 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 93.75%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--VeryLightGray);
 }
 
 a {
@@ -13,14 +28,74 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.red {
+  color: var(--Red);
+}
+
+.cyan {
+  color: var(--Cyan);
+}
+
+.orange {
+  color: var(--Orange);
+}
+
+.blue {
+  color: var(--Blue);
+}
+
+.dark-blue {
+  color: var(--VeryDarkBlue);
+}
+
+.gray-blue {
+  color: var(--GrayishBlue);
+}
+
+.light-gray {
+  color: var(--VeryLightGray);
+}
+
+.w-200 {
+  font-weight: 200;
+}
+
+.w-400 {
+  font-weight: 400;
+}
+
+.w-600 {
+  font-weight: 600;
+}
+
+.bg-red {
+  background-color: var(--Red);
+}
+
+.bg-cyan {
+  background-color: var(--Cyan);
+}
+
+.bg-orange {
+  background-color: var(--Orange);
+}
+
+.bg-blue {
+  background-color: var(--Blue);
+}
+
+.bg-dark-blue {
+  background-color: var(--VeryDarkBlue);
+}
+
+.bg-gray-blue {
+  background-color: var(--GrayishBlue);
+}
+
+.bg-light-gray {
+  background-color: var(--VeryLightGray);
 }
