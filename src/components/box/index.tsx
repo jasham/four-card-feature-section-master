@@ -16,7 +16,13 @@ export const Box = ({ title, description, image, bgColor }: BoxProps) => {
         <h2>{title}</h2>
         <p>{description}</p>
         <div>
-          <Image src={image} alt={image} width={60} height={60} />
+          <Image
+            src={image}
+            alt={image}
+            width={60}
+            height={60}
+            loading="eager"
+          />
         </div>
       </div>
     </div>
